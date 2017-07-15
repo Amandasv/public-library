@@ -1,4 +1,4 @@
-package main.java.com.amandasv.library;
+package com.amandasv.library;
 
 public class Main {
 
