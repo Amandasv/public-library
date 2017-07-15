@@ -8,8 +8,8 @@ public class WelcomeTest {
     @Test
     public void welcomeMessageShouldAppear() {
         Welcome welcome = new Welcome();
-        welcome.showMessage();
-
+        String message = welcome.showMessage();
+        Assert.assertNotNull(message);
     }
 
 }
