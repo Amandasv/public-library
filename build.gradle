@@ -1,20 +1,26 @@
 apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
 apply plugin: 'application'
 
-mainClassName = 'main.java.com.amandasv.library.Main'
+mainClassName = 'com.amandasv.library.Main'
 
 repositories {
     mavenCentral()
-}
-
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-dependencies {
-    testCompile "junit:junit:4.12"
 }
 
 jar {
     baseName = 'gs-gradle'
     version =  '0.1.0'
 }
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile "junit:junit:4.12"
+    testCompile "junit:junit:4.12"
+}
+
+
+
